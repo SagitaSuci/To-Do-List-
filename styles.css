@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #434343, #1f3d47);
+  color: #f0eaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: 'background' 0.3s, color 0.3s;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  width: 300px;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+button#add-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0eaea;
+  color: #333;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+#clock {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(0,0,0,0.3);
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px auto;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-decoration: none;
+  color: #eee;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+li button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.theme-toggle {
+  margin-top: 15px;
+}
+
+.theme-toggle button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+#light-mode {
+  background: #fff;
+}
+
+#dark-mode {
+  background: #333;
+}
+
+body.light {
+  background: #ddd;
+  color: #333;
+}
+
+body.light li {
+  background: rgba(255,255,255,0.6);
+  color: #333;
+}
+
+body.light button#add-btn {
+  background-color: #333;
+  color: #fff;
+}
